@@ -1,0 +1,560 @@
+/* @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+    #slide-container{
+        max-width: 1120px;
+        width: 100%;
+        background-color: #707070;
+        padding: 40px;
+
+    }
+
+
+.slide-content{
+    margin: 0 40px;
+}
+
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 10px 14px;
+
+}
+
+#card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px;
+    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before, .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0 ;
+    background-color: white;
+}
+
+
+.card-imag{
+    border: none;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+
+.card-imag .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.des{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+.btn{
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background: #265df2;
+} */
+/* .swiper{
+    width: 600px;
+    height: 300px;
+} */
+html,
+body {
+  position: relative;
+  height: 100%;
+  /* min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite; */
+}
+
+body {
+  /* background: #eee; */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 110%;
+  max-width: 1450px;
+  /* background-color: #707070; */
+  padding: 40px;
+  overflow: hidden;
+  padding-left: 10%;
+  padding-top: 60px;
+
+}
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  overflow: hidden; */
+  /* justify-content: center;
+  align-items: center; */
+  /* width: fit-content;
+  height: fit-content;
+  
+} */
+
+/* .swiper-slide img {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  object-fit: cover;
+} */
+
+
+
+
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     /* padding: 10px 14px;     */
+    width: fit-content;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px;
+    
+}
+.card-content{
+    width: 200px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before, .overlay::after{
+    border: none;
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+}
+.overlay::after{
+    border: none;
+    border-radius: 0 25px 0 0 ;
+    background-color: white;
+}
+
+
+.card-imag{
+    border: none;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+
+.card-imag .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.des{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+.btn{
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background: #265df2;}
+
+
+/* TEST */ /* TEST */ /* TEST */ /* TEST */ /* TEST */
+.swiper-slide{
+    position: relative;
+}
+
+#season{
+    border-radius: 50px;
+    background-color: #C4C4C480;
+    /* background: url(/image/frame.png) center no-repeat; */
+    width: 96%;
+    height: 73.5%;
+    position: absolute;
+    top: 75px;
+    left: -25px;
+    backdrop-filter: blur(3px);
+    /* filter: drop-shadow(0px 7px 3px #C4C4C480);    */
+}
+.type{
+    font-size: 50px;
+    margin-left : 30px;
+    margin-top: 10px;
+    font-family: 'Koulen', cursive;
+    color: black;
+
+}
+.title{
+    filter: drop-shadow(7px 7px 2px rgba(0, 0, 0, 0.25));
+    font-size: 80px;
+    margin-top: 20px;
+    margin-left : 30px;
+    font-family: 'Fugaz One', cursive;
+    color: black;
+}
+.t2{
+    line-height: 1;
+    margin-left : 60px;
+}
+
+.price{
+    position: absolute  ;
+    font-family: 'Chathura', sans-serif;
+    font-size: 100px;
+    color: black;
+    left: 780px;
+    bottom: -15px;
+
+}
+
+.img_shoes{
+    position: absolute;
+    background: url(/image/shoes.png) center no-repeat ;
+    left: 600px;
+    top: -110px;    
+    margin-right: 100px;
+    height: 600px;
+    width: 600px;
+}
+.nike_icon{
+    background: url(/image/nike.png) center no-repeat ;
+    position: absolute;
+    left: 350px;
+    top: 100px;
+    height: 250px;
+    width: 600px;  
+}
+
+
+#moreInfo_btn{
+    margin-top: 100px;
+    margin-left : 30px;
+    border-radius: 50px;
+    border: 0px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    width: 190px;
+    height: 60px;
+    color: black;
+    background-color: #929292;
+}
+#addtoCart_btn{
+    margin-top: 100px;
+    margin-left : 70px;
+    border-radius: 50px;
+    border: 0px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    width: 190px;
+    height: 60px;
+    color: white;
+    background-color: black;
+}
+.choose_color{
+    position: absolute;
+    left: 1010px;
+    bottom:0px;
+    list-style-type: none;
+ 
+}
+.choose_color li{
+    padding-bottom: 4px;
+}
+#white{
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: 0px;
+}
+#blue{
+    background-color: #000B6A;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: 0px;
+}
+#black{
+    background-color: black;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: 0px;
+}
+
+/* NEW SHOES */
+
+
+#new{
+    border-radius: 50px;
+    background-color: #FFBBAC80;
+    width: 96%;
+    height: 73.5%;
+    position: absolute;
+    top: 75px;
+    left: -25px;
+    backdrop-filter: blur(3px);
+    /* filter: drop-shadow(0px 7px 3px #C4C4C480);    */
+}
+.s2{
+    color: #822F00;
+}
+
+#moreInfo_btn_ana{
+    margin-top: 340px;
+    margin-left : 30px;
+    border-radius: 50px;
+    border: 0px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    width: 190px;
+    height: 60px;
+    background-color: white;
+    color: #FF7474;
+}
+#addtoCart_btn_ana{
+    margin-top: 340px;
+    margin-left : 70px;
+    border-radius: 50px;
+    border: 0px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    width: 190px;
+    height: 60px;
+    background-color: #FF7474;
+    color: white;
+}
+.ananas_shoes{
+    background: url(/image/ananas4.png) center no-repeat;
+    position: absolute;
+    /* background-color: antiquewhite; */
+    height: 900px;
+    width: 900px;
+    left: 450px;
+    top: -220px;  
+}
+.ananas_icon1{
+    background: url(/image/ananas_logo.png) center no-repeat;
+    position: absolute;
+    /* background-color: antiquewhite; */
+    height: 300px;  
+    width: 900px;
+    left: 110px;
+    top: 20%;  
+}
+.ananas_icon2{
+    background: url(/image/ananas_logo_t2_4.png) center no-repeat;
+    position: absolute;
+    /* background-color: antiquewhite; */
+    height: 400px;  
+    width: 300px;
+    left: 15px;
+    top: 45px; 
+}
+.p2{
+    left: 50%;
+    bottom: -20px;
+}
+
+
+/* BEST SELLER */
+#bestseller{
+    border-radius: 50px;
+    background-color: #FFC07780;
+    width: 96%;
+    height: 73.5%;
+    position: absolute;
+    top: 75px;  
+    left: -25px;
+    backdrop-filter: blur(3px);
+    /* filter: drop-shadow(0px 7px 3px #C4C4C480);    */
+}
+
+.title_vans{
+    margin-left : 30px;
+    font-family: 'Koulen', cursive;
+    color: black;
+}
+.tv1{
+    font-size: 33px;
+    line-height: 1;
+}
+.tv2{
+    line-height: 1.5;
+    font-size: 70px;
+    color: #A1A41F;
+}
+.vans_icon{
+    background: url(/image/vans_logo3.png) no-repeat;
+    position: absolute;
+    width: 160%;
+    height: 160%;
+    /* background-color: black; */
+    top: 35px;
+    left: 0px;
+}   
+.vans_border{
+    position: absolute;
+    background: url(/image/border5.png) bottom no-repeat;
+    /* background-color: antiquewhite; */
+    height: 160%;
+    width: 100%;
+    top: -170px;
+    left: -130px;
+}
+
+.vans_shoes{
+    background: url(/image/vans1.png) center no-repeat;
+    position: absolute;
+    /* background-color: antiquewhite; */
+    height: 700px;
+    width: 700px;
+    left: 540px;
+    top: -175px;  
+}
+#moreInfo_btn_vans{
+    position: absolute;
+    margin: 0px;
+    line-height: 0.2; 
+    left: 85px;
+    background-color: white;
+    color: #9B5300;
+    border-radius: 50px;
+    border: 0px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    width: 190px;
+    height: 60px;
+}
+#addtoCart_btn_vans{
+    border-radius: 50px;
+    border: 0px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    width: 190px;
+    height: 60px;
+    position: absolute;
+    margin: 0px;
+    left: 80%;
+    bottom: 20px;
+    background-color: #BD9A40;
+    color: white;
+}
+.p3{
+    left: 720px;
+    bottom: -25px;
+}
+.Testing{
+    font-size: 30px;
+    margin-left: 50px;
+}
